@@ -8,11 +8,12 @@ export default function Weather() {
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
+      city: response.data.name,
+      description: response.data.weather[0].description,
+      humidity: response.data.main.humidity,
+      imgUrl: "https://ssl.gstatic.com/onebox/weather/48/sunny.png",
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
-      city: response.data.name,
-      description: "Sunny",
-      humidity: response.data.main.humidity,
     });
 
     setReady(true);
@@ -65,10 +66,7 @@ export default function Weather() {
             <div className="CurrentWeather">
               <div className="row">
                 <div className="col-12">
-                  <img
-                    src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
-                    alt="Sunny"
-                  />
+                  <img src={weatherData.imgUrl} alt={weatherData.description} />
                 </div>
               </div>
               <span>{Math.round(weatherData.temperature)}°</span>
