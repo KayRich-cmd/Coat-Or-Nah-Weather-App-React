@@ -4,9 +4,18 @@ import "./Weather.css";
 
 export default function Weather() {
   const [ready, setReady] = useState(false);
-  const [temperature, setTemperature] = useState(null);
+  const [weatherData, setWeatherData] = useState({});
   function handleResponse(response) {
     console.log(response.data);
+    setWeatherData({
+      temperature: response.data.main.temp,
+      wind: response.data.wind.speed,
+      city: response.data.name,
+      description: "Sunny",
+      humidity: response.data.main.humidity,
+    });
+
+    setReady(true);
   }
 
   if (ready) {
@@ -44,9 +53,9 @@ export default function Weather() {
             <div className="Overview">
               <ul>
                 <li>
-                  <h1>Sydney, AUS</h1>
+                  <h1>{weatherData.city}</h1>
                 </li>
-                <li>Perpetually Sunny Here</li>
+                <li>{weatherData.description}</li>
                 <li>
                   <small>Last Updated On: Friday @ 00:12</small>
                 </li>
@@ -62,7 +71,7 @@ export default function Weather() {
                   />
                 </div>
               </div>
-              <span>3°</span>
+              <span>{Math.round(weatherData.temperature)}°</span>
               <span className="unit-type">
                 <a href="/">C</a> |<a href="/"> F</a>
               </span>
@@ -72,11 +81,11 @@ export default function Weather() {
               <ul>
                 <li>
                   <span className="other-description-label"> Humidity:</span>{" "}
-                  <span>--%</span>
+                  <span>{weatherData.humidity}%</span>
                 </li>
                 <li>
                   <span className="other-description-label"> Wind Speed:</span>{" "}
-                  <span>--</span> km/h
+                  <span>{Math.round(weatherData.wind)}</span> km/h
                 </li>
               </ul>
             </div>
