@@ -28,3 +28,50 @@
   position: relative;
   right: 25px;
 }
+
+.Weather ul {
+  display: inline-table;
+  list-style: none;
+}
+
+.Weather h1 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.Weather small {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.CurrentWeather img {
+  width: 130px;
+}
+
+.CurrentWeather span {
+  font-size: 140px;
+  color: #e9af03e0;
+}
+
+.CurrentWeather span.unit-type {
+  font-size: 50px;
+  position: relative;
+  left: 20px;
+  bottom: 60px;
+}
+
+.CurrentWeather a {
+  text-decoration: none;
+  color: #757575;
+  transition: all 200ms ease-in-out;
+  position: relative;
+}
+
+.CurrentWeather a:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.CurrentWeather a.active {
+  color: #212121;
+}
