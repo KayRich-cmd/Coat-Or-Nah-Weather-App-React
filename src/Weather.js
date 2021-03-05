@@ -32,6 +32,18 @@ export default function Weather() {
               </div>
             </div>
           </form>
+
+          <div className="Overview">
+            <ul>
+              <li>
+                <h1>Sydney, AUS</h1>
+              </li>
+              <li>Perpetually Sunny Here</li>
+              <li>
+                <small>Last Updated On: Friday @ 00:12</small>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
