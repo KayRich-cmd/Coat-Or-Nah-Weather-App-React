@@ -44,6 +44,21 @@ export default function Weather() {
               </li>
             </ul>
           </div>
+
+          <div className="CurrentWeather">
+            <div className="row">
+              <div className="col-12">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                  alt="Sunny"
+                />
+              </div>
+            </div>
+            <span>3°</span>
+            <span className="unit-type">
+              <a href="/">C</a> |<a href="/"> F</a>
+            </span>
+          </div>
         </div>
       </div>
     </div>
