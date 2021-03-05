@@ -75,3 +75,12 @@
 .CurrentWeather a.active {
   color: #212121;
 }
+
+.OtherDescription {
+  font-size: 40px;
+}
+
+.OtherDescription span.other-description-label {
+  font-weight: 800;
+  color: #ffffff;
+}
