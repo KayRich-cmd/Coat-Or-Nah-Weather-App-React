@@ -1,1 +1,30 @@
+.Weather div.card {
+  background: transparent;
+  margin: 150px auto 100px;
+}
 
+.Weather input.form-input-style {
+  border-radius: 50px;
+  margin-bottom: 60px;
+  font-size: 20px;
+  opacity: 0.4;
+}
+
+.Weather a.btn-secondary {
+  background: #757575;
+  border: 1px solid #757575;
+  color: #ffffff;
+  transition: all 200ms ease-in-out;
+}
+
+.Weather a.btn-secondary:hover {
+  background: #ffffff;
+  border: 1px solid #757575;
+  color: #757575;
+  cursor: pointer;
+}
+
+.Weather .current-location-button {
+  position: relative;
+  right: 25px;
+}
