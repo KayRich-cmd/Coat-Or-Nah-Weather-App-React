@@ -21,5 +21,9 @@ export default function FormattedDate(props) {
     minutes = `0${minutes}`;
   }
 
-  return `${day} @ ${hours}:${minutes}`;
+  return (
+    <small>
+      Last Updated On: {day} @ {hours}:{minutes}
+    </small>
+  );
 }

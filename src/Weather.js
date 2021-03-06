@@ -58,9 +58,7 @@ export default function Weather(props) {
                 </li>
                 <li className="text-capitalize">{weatherData.description}</li>
                 <li>
-                  <small>
-                    Last Updated On: <FormattedDate date={weatherData.date} />
-                  </small>
+                  <FormattedDate date={weatherData.date} />
                 </li>
               </ul>
             </div>
