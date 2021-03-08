@@ -8,7 +8,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         RE-DO WEATHER APP! *REMOVE THIS WHEN DONE*
-        <Weather defaultCity="New York" />
+        <Weather defaultCity="Sydney" />
       </div>
     </div>
   );
