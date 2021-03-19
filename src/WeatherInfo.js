@@ -24,8 +24,7 @@ export default function WeatherInfo(props) {
             <WeatherIcon code={props.data.icon} alt={props.data.description} />
           </div>
         </div>
-        <span>{Math.round(props.data.temperature)}°</span>
-        <TemperatureConversion />
+        <TemperatureConversion celsius={props.data.temperature} />
       </div>
 
       <div className="OtherDescription">

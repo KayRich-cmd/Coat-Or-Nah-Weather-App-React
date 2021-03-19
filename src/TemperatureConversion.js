@@ -1,9 +1,12 @@
 import React from "react";
 
-export default function TemperatureConversion() {
+export default function TemperatureConversion(props) {
   return (
-    <span className="unit-type">
-      <a href="/">C</a> |<a href="/"> F</a>
-    </span>
+    <div className="TemperatureConversion">
+      <span>{Math.round(props.celsius)}°</span>
+      <span className="unit-type">
+        <a href="/">C</a> |<a href="/"> F</a>
+      </span>
+    </div>
   );
 }
