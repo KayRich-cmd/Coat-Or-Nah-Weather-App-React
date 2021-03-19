@@ -54,10 +54,10 @@
 }
 
 .CurrentWeather span.unit-type {
-  font-size: 50px;
+  font-size: 40px;
   position: relative;
-  left: 20px;
-  bottom: 60px;
+  left: 10px;
+  bottom: 70px;
 }
 
 .CurrentWeather a {
@@ -72,8 +72,10 @@
   cursor: pointer;
 }
 
-.CurrentWeather a.active {
+.CurrentWeather span.active {
   color: #212121;
+  font-size: 40px;
+  font-weight: bolder;
 }
 
 .OtherDescription {
