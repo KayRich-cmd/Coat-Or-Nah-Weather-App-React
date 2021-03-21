@@ -10,7 +10,7 @@ export default function Forecast(props) {
     setLoaded(true);
   }
 
-  if (loaded) {
+  if (loaded && props.city === forecast.city.name) {
     return (
       <div className="Forecast">
         <div className="card">
@@ -18,8 +18,12 @@ export default function Forecast(props) {
             <h2>Hourly Forecast for {props.city}</h2>
 
             <br />
-
-            <WeatherForecastPreview data={forecast.list[0]} />
+            <div className="row">
+              <WeatherForecastPreview data={forecast.list[0]} />
+              <WeatherForecastPreview data={forecast.list[1]} />
+              <WeatherForecastPreview data={forecast.list[2]} />
+              <WeatherForecastPreview data={forecast.list[3]} />
+            </div>
           </div>
         </div>
       </div>
