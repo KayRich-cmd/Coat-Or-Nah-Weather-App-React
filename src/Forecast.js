@@ -18,13 +18,8 @@ export default function Forecast(props) {
             <h2>Hourly Forecast for {props.city}</h2>
 
             <br />
-            <table className="table table-borderless">
-              <WeatherForecastPreview data={forecast.list[0]} />
-              <WeatherForecastPreview data={forecast.list[1]} />
-              <WeatherForecastPreview data={forecast.list[2]} />
-              <WeatherForecastPreview data={forecast.list[3]} />
-              <WeatherForecastPreview data={forecast.list[4]} />
-            </table>
+
+            <WeatherForecastPreview data={forecast.list[0]} />
           </div>
         </div>
       </div>
