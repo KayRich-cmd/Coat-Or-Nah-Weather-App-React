@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="Footer mb-5">
       <a
         className="btn btn-secondary"
-        href="https://github.com/KayRich-cmd/react-weather-app"
+        href="https://github.com/KayRich-cmd/Coat-Or-Nah-Weather-App-React"
         target="_blank"
         rel="noreferrer"
         role="button"
